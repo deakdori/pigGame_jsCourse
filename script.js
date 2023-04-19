@@ -23,8 +23,8 @@ btnRoll.addEventListener('click', function () {
   const dice = Math.trunc(Math.random() * 6) + 1;
 
   //2) Display die
-  diceEl.classList.remove('hidden');
   diceEl.src = `dice-${dice}.png`;
+  diceEl.classList.remove('hidden');
 
   //3) Check for rolled 1
   if (dice !== 1) {
